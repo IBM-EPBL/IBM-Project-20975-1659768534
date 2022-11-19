@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="{{url_for('static', filename='css/style.css')}}"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="icon" href="{{url_for('static', filename='img/logo.png')}}" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!-- link for icon -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>{% block title %}{% endblock %}</title>
+
+  </head>
+  <body>
+    
+    <nav>
+      <ul class="menu">
+        
+        <li class="nav-items logo"><a href="/home">IBM NEWS</a></li>
+        <li class="nav-items">
+          <form action="{{ url_for('search') }}" class="search-bar" method="post">
+            <input type="text" placeholder="Search any topic" name="search" id="search"/>
+            <i class='bx bx-search'></i>
+          </form>
+        </li>
+        <li class="nav-items"><a href="/home">Home</a></li>
+        <li class="nav-items dropdown"><a href="/profile">Profile</a></li>
+        <li class="nav-items"><a href='/about'>About</a></li>
+
+        <li class="nav-items login" id="logout" style="float:right"><a href="/logout" ><i class='bx bx-log-in'></i>Log out</a></li>
+        
+    </nav>
+    
+      
+    <!-- side panel -->
+    <section class="sidepanel">
+      <div class="sidebar">
+        <ul class="sidenav">
+          <li class="side-items"><a href="/business">Buisness</a></li>
+          <li class="side-items"><a href="/sports">Sports</a></li>
+          <li class="side-items"><a href="/entertainment">Entertainment</a></li>
+          <li class="side-items"><a href="/technology">Technology</a></li>
+          <li class="side-items"><a href="/science">Science</a></li>
+          <li class="side-items"><a href="/health">Health</a></li>
+        </ul>
+      </div>
+    </section>
+    {% block body %}
+      
+    {% endblock body %}
+    <footer>
+      <div class="head-f"><h2>Copyright &copy; IBM News 07 2021</h2></div>
+    </footer>
+
+    <script src="../static/js/app.js"></script>
+  </body>
+</html>
