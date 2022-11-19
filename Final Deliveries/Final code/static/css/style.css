@@ -1,0 +1,335 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: white;
+}
+* {
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none !important;
+}
+
+/* navigation bar */
+/* nav {
+    min-height: 50px;
+    width: 100%;
+    background-color: #04befe;
+    position: sticky;
+    top: 0;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row wrap;
+}
+.logo h2 {
+    font-size: 30px;
+    font-weight: bold;
+    color: white !important;
+    letter-spacing: 1px;
+} 
+
+nav .menu {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+nav .menu li a {
+    height: 35px;
+    line-height: 30px;
+    display:flex ;
+    text-transform: uppercase;
+    align-items: center;
+    padding: 0px 22px;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 1px;
+}
+nav .menu li a:hover { 
+    color: black;
+    background-color:white;
+    border-radius: 20px;
+}
+nav .menu .login{
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+} */
+nav{
+    position: sticky;
+    top: 0;
+}
+nav .menu .logo{
+    font-weight: bolder;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    padding-right: 160px;
+}
+.menu{
+    margin: 0;
+    padding: 10px;
+    overflow: hidden;
+    background-color: #04befe;
+    
+}
+  
+.menu li {
+    float: left;
+}
+  
+.menu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+/* .menu li .search-bar{
+    padding: 14px 16px;
+} */
+.menu li a:hover {
+    color: #111;
+    font-weight: bold;
+}
+  
+/* input bar style */
+.menu li .search-bar{
+    width: 500px;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu li .search-bar input{
+    width: 280px;
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+.menu li .search-bar i{
+    border: 2px solid white;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+.menu .login i{
+    padding-right: 5px;
+}
+/* side navbar */
+ul.sidenav {
+    margin: 0;
+    padding: 0;
+    width: 15%;
+    background-color: #48d1ff;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  }
+
+  ul.sidenav li a {
+    display: block;
+    color: white;
+    padding: 15px 16px;
+    text-decoration: none;
+    font-size: 1.2rem;
+  }
+   
+  ul.sidenav li a.active {
+    background-color: white;
+    color: black;
+  }
+  
+  ul.sidenav li a:hover:not(.active) {
+    background-color: white;
+    color: black;
+    text-align: center;
+    font-weight: bolder;
+  }
+  
+  
+
+/* end of navigation bar */
+#main {
+    margin-left: 20%;
+    /* padding-top: 95px; */
+}
+.banner {
+    height: 620px;
+    width: 100%;
+    display: flex;
+    flex-wrap: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border: 1px solid rgb(98, 4, 4);
+}
+.banner img {
+    height: 100%;
+    width: 100%;
+    padding: 2px;
+}
+.head-git{
+    height: 40px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(250, 244, 244);
+    display: flex;
+    flex-flow: row;
+    margin-bottom: 5px;
+  }
+  .head-git h2 {
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:black;
+  }
+  .head-git h2 a { 
+    text-decoration: none;
+    color:blue;
+    font-size: 23px;
+  }
+  .head-git h2 a:hover { 
+    color:rgb(211, 47, 41);
+    background-color: beige;
+  }
+  .nav-link {
+    height: 100%;
+    width: 100%;
+    color: black;
+  }
+
+.wrapper {
+    height: 400px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content: space-between;
+    background-color: white;  
+    /* rgb(68, 47, 47) */
+}
+.wrapper .item {
+    height: 300px;
+    min-width: 30%;
+    border-radius: 20px;
+    margin: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
+    padding: 0.5px;
+    flex-flow: column wrap;
+    border-bottom: 1px white;
+}
+.wrapper .item img {
+    height: 100%;
+    width: 100%;
+}
+.c-box {
+    height: content;
+    max-width: 50%;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    flex-flow: column;
+    padding: 1px;
+} 
+.c-box .content {
+    height: content;
+    min-width: 30%;
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+}
+.c-box .content p {
+    color: black;
+    /* #fff */
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.c-box .content h2 {
+    color: rgb(17, 0, 255);
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* styling footer section */
+
+footer{
+    margin-left: 15%;
+}
+.head-f{
+    width: 100%;
+    padding-top: 60px;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px solid black;
+    background-color: rgb(58, 58, 58);
+    display: flex;
+    flex-flow: column;
+  }
+  .head-f h2 {
+    font-size: 15px;
+    color:white;
+  }
+
+
+  /* news style */
+  .container {
+    /* margin-top: 20px; */
+    margin-left: 15%;
+    padding-left: 20px;
+    padding-right: 10px;
+  }
+  .container h1{
+    background: -webkit-linear-gradient(#eee, rgb(255, 0, 0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .nav{
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  .news_box {
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    /* padding: 3%; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.2em;
+    /* background-color: rgb(236, 236, 236); */
+  }
+  .navbar-brand {
+    text-decoration: none;
+    font-size: 2em;
+  }
+  .img_div{
+    margin: 3%;
+  }
+  .info_div{
+    margin: 3%;
+  }
+
+  @media screen and (max-width: 980px) {
+    .news_box {
+      flex-direction: column;
+    }
+    .img_div img{
+      width: 100%;
+    }
+  }
